@@ -1,0 +1,243 @@
+.intro_content {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.intro_media_content {
+    flex: 1;
+    width: 100%;
+    top: 0;
+}
+
+.intro_scroll_down_div {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 4%;
+
+    .scroll_arrow {
+        height: 40px;
+        margin-top: 10px;
+    }
+    
+    .scroll_text {
+        flex: 1;
+        font-family: Hanken Grotesk;
+        color: white;
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+
+.spacing_div {
+    display: flex;
+    width: 100%;
+}
+
+.spacer_image {
+    width: 100%;
+}
+
+
+
+
+
+
+.main_div {
+    font-family: Hanken Grotesk;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.book {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.book_link {
+    font-family: Hanken Grotesk;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+.book_link:hover {
+    opacity: 0.5;
+}
+
+
+
+.homepage_intro_text_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    h1 {
+        width: 600px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    p {
+        width: 600px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 28px;
+        margin-top: 0;
+        padding-top: 0;
+    }    
+}
+
+
+.house_intro_container,
+.room_intro_container {
+    display: flex;
+    padding-bottom: 160px;
+
+    .house_intro_pic_side,
+    .room_intro_pic_side {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 25px;
+    }
+
+    .room_intro_pic_side {
+        padding-right: 3%;
+    }
+
+    img {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.house_intro_text_side,
+.room_intro_text_side {
+    flex: 1;
+    position: relative;
+
+    .house_intro_text_side_sticky,
+    .room_intro_text_side_sticky {
+        position: sticky;
+        top: 45%;
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 430px;
+        }
+
+        a {
+            color: black;
+            font-size: 18px;
+        }
+    }
+}
+
+.room_intro_text_side {
+    padding-left: 3%;
+}
+
+
+.wellness_intro_container {
+    background-color: black;
+}
+
+.wellness_intro_text_container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 5%;
+    
+    h1 {
+        color: white;
+        text-align: start;
+        margin: 0;
+        margin-top: 60px;
+        font-weight: 600;
+    }
+
+    p {
+        color: white;
+        font-weight: 200;
+        max-width: 700px;
+        text-align: start;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        font-size: 28px;
+    }
+}
+
+.wellness_intro_photo_container {
+    display: flex;
+    padding: 40px;
+    padding-top: 0;
+    padding-bottom: 40px;
+    background-color: transparent;
+}
+
+.wellness_intro_img {
+    flex: 1;
+    margin: 8px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.comments_container {
+    background-color: rgb(224, 224, 224);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.comments_conatiner_row1 {
+    h1 {
+        margin: 0;
+        font-weight: 600;
+    }
+}
+
+.comments_conatiner_row2 {
+    display: flex;
+    column-gap: 50px;
+
+    p {
+        flex: 1;
+        font-size: 28px;
+        font-weight: 200;
+    }
+
+    .comments_names {
+        font-size: 20px;
+    }
+}
