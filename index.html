@@ -55,7 +55,11 @@
         </header>
         <div class="intro_container">
             <div class="intro_content">
-                <video class="intro_media_content" src="intro/fajn_tajm_video.mp4" type="video/mp4" autoplay loop></video>
+                <video class="intro_media_content" autoplay loop muted playsinline>
+                    <source src="intro/fajn_tajm_video.mp4" type="video/mp4">
+                    <!-- Add additional <source> elements for other video formats if needed -->
+                    Your browser does not support the video tag.
+                  </video>                  
                 <div class="intro_scroll_down_div">
                     <span class="scroll_text">SCROLL</span>
                     <img class="scroll_arrow" src="svg/scroll_arrow.svg">
