@@ -1,11 +1,10 @@
-const spacer = document.getElementById('spacing_div');
+const spacer = document.getElementById('spacer');
 const menuItems = document.getElementsByClassName("mid_section")[0];
 const header =  document.getElementById("changeable_header");
 const languages = document.getElementsByClassName("language")[0];
 const logo = document.getElementById("fajntajm_logo");
 const ig = document.getElementById("ig_header");
 const fb = document.getElementById("fb_header");
-
 
 
 
