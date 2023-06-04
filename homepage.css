@@ -132,7 +132,7 @@
     display: block;
   }
   .house_intro_pic_side {
-    padding: 0;
+    padding-left: 0;
     background-color: rgb(126, 254, 7);
   }
 }

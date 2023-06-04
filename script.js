@@ -9,7 +9,7 @@ const fb = document.getElementById("fb_header");
 
 
 window.onscroll = function() {
-  // Adding pageYOffset for compatibility with IE
+  // pageYOffset for compatibility with IE
   if (window.scrollY > (spacer.offsetHeight - 80) || window.pageYOffset > (spacer.offsetHeight - 80)) {
     logo.classList.add("logo_color_change");
     menuItems.classList.add("menu_color_change");
