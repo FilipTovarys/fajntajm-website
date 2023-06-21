@@ -113,6 +113,24 @@
 }
 
 
+.onlymobile_intro_pic {
+    display: none;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+.mobile_pic {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .onlymobile_intro_pic {
+        display: flex;
+    }
+}
+
+
+
 .house_intro_pic_side,
 .room_intro_pic_side {
     padding-left: 3%;

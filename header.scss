@@ -123,6 +123,71 @@
 
 
 
+.hamburger_icon {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 25px;
+    display: none;
+    fill: #FFFFFF;
+}
+
+.hamburger_icon:hover {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .right_section { 
+        display: none;
+    }
+
+    .hamburger {
+        padding-right: 5%;
+    }
+
+    .hamburger_icon {
+        display: flex;
+        z-index: 10000;
+    }
+
+    .fajntajm_logo {
+        width: 80px;
+        margin-left: 5%;
+    }
+
+    .mid_section {
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 7%;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+
+    .mid_section li a {
+        color: rgb(0, 0, 0);
+        display: flex;
+        font-size: 50px;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .mid_section li a {
+        font-size: 35px;
+    }
+}
+
+
 // Classlists for JS
 .logo_color_change {
     stroke: black;
@@ -146,4 +211,12 @@
 
 .fb_logo_color_change {
     fill: black;
+}
+
+.hamburger_icon_color_change {
+    fill: black;
+}
+
+.menu_open {
+    left: 0;
 }
