@@ -26,9 +26,7 @@
     width: 130px;
     margin-left: 3vw;
     transition: 0.25s;
-    fill: none;
-    stroke: rgb(255, 255, 255);
-    stroke-miterlimit: 10;
+    fill: white;
 }
 
 .fajntajm_logo:hover {
@@ -209,7 +207,7 @@
 
 // Classlists for JS
 .logo_color_change {
-    stroke: black;
+    fill: black;
 }
 
 .header_bg_color_change {

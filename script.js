@@ -37,10 +37,10 @@ window.onscroll = function() {
 
 
 menu.onclick = () => {
-  body.classList.toggle("scroll-locked")
+  body.classList.toggle("scroll-locked");
   navbar.classList.toggle("menu_open");
   right_section.classList.toggle("right_section_open");
-  hamburger.classList.toggle("hamburger_icon_color_change_bl")
+  hamburger.classList.toggle("hamburger_icon_color_change_bl");
 }
 
 
