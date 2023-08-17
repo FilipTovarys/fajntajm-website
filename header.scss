@@ -24,8 +24,7 @@
 .fajntajm_logo {
     flex: 1;
     width: 130px;
-    margin-left: 10%;
-    margin-top: 10px;
+    margin-left: 3vw;
     transition: 0.25s;
     fill: none;
     stroke: rgb(255, 255, 255);
@@ -65,7 +64,6 @@
 
 // Right section (languages, social sites)
 .right_section {
-    height: 100%;
     display: flex;
     flex: 1;
     justify-content: flex-end;
@@ -123,10 +121,9 @@
 
 
 
-.hamburger_icon, .x_mark {
+.hamburger_icon {
     align-items: center;
     justify-content: center;
-    position: absolute;
     z-index: 1000;
     top: 0;
     right: 0;
@@ -140,33 +137,33 @@
 }
 
 
+// Hamburger menu
 @media only screen and (max-width: 950px) {
     #changeable_header {
         height: 75px;
     }
     
-    .right_section { 
-        display: none;
+    .right_section {
+        display: none; 
+        position: fixed;
+        margin-left: 20px;
+        height: 15%;
+        bottom: 0;
     }
 
     .hamburger {
-        padding-right: 5%;
+        display: flex;
+        align-items: center;
     }
 
     .hamburger_icon {
+        flex: 1;
         display: flex;
-        z-index: 10000;
-        margin-top: 3%;
-        margin-right: 3%;
+        margin-right: 3vw;
     }
 
     .fajntajm_logo {
         width: 80px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: 3%;
-        margin-left: 3%;
     }
 
     .mid_section {
@@ -180,14 +177,26 @@
         left: 100%;
         right: 0;
         margin: 0;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
 
     .mid_section li a {
         color: rgb(0, 0, 0);
         display: flex;
-        font-size: 50px;
+        font-size: 5vh;
         margin-top: 10%;
+    }
+
+    .language a {
+        color: rgb(0, 0, 0);
+    }
+
+    .ig_logo_header {
+        fill: black;
+    }
+
+    .fb_logo_header {
+        fill: black;
     }
 }
 
@@ -227,6 +236,22 @@
     fill: black;
 }
 
+.hamburger_icon_color_change_bl {
+    fill: black;
+}
+
 .menu_open {
     left: 0;
+}
+
+.right_section_open {
+    display: flex;
+}
+
+.scroll-locked {
+    overflow: hidden;
+  }
+
+.languages_color_change_hamburger {
+    color: black;
 }
