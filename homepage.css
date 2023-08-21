@@ -9,9 +9,9 @@
 .intro_media_content {
   flex: 1;
   height: 100vh;
-  width: 100vh;
-  -o-object-position: center;
-     object-position: center;
+  width: 100vw;
+  -o-object-position: center center;
+     object-position: center center;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -33,14 +33,14 @@
   align-items: center;
 }
 .intro_scroll_down_div .scroll_arrow {
-  height: 40px;
+  width: 1vw;
   margin-top: 10px;
 }
 .intro_scroll_down_div .scroll_text {
   flex: 1;
   font-family: Hanken Grotesk;
   color: white;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: 200;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .book {
-  height: 80px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,8 +64,8 @@
 
 .book_link {
   font-family: Hanken Grotesk;
-  font-weight: 100;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   background-color: black;
@@ -85,7 +85,6 @@
   height: 350px;
 }
 .homepage_intro_text_div h1 {
-  width: 600px;
   text-align: center;
   font-weight: 600;
   font-size: 28px;
@@ -93,7 +92,6 @@
   padding-bottom: 0;
 }
 .homepage_intro_text_div p {
-  width: 600px;
   text-align: center;
   font-weight: 400;
   font-size: 28px;
@@ -268,9 +266,24 @@
 }
 .comments_conatiner_row2 p {
   flex: 1;
-  font-size: 28px;
+  font-size: 2vw;
   font-weight: 200;
 }
 .comments_conatiner_row2 .comments_names {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .intro_scroll_down_div .scroll_arrow {
+    width: 3vw;
+  }
+  .intro_scroll_down_div .scroll_text {
+    font-size: 3vw;
+  }
+  .book {
+    height: 15vw;
+  }
+  .book .book_link {
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=homepage.css.map */

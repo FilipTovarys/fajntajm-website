@@ -8,8 +8,8 @@
   align-items: center;
   height: 80px;
   font-family: Hanken Grotesk;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 200;
+  font-size: 16px;
   z-index: 1000;
   transition: 0.25s;
 }
@@ -63,12 +63,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100px;
+  width: 8vw;
 }
 .language a {
   flex: 1;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 14px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   transition: 0.25s;
@@ -76,7 +76,7 @@
 }
 
 .lang_item:hover {
-  font-size: 18px;
+  font-size: 1.2vw;
   opacity: 0.5;
 }
 
@@ -89,7 +89,7 @@
 .fb_logo_header {
   flex: 1;
   width: 20px;
-  margin-right: 15px;
+  margin-right: 1vw;
   transition: 0.25s;
 }
 
@@ -113,7 +113,7 @@
   z-index: 1000;
   top: 0;
   right: 0;
-  width: 25px;
+  width: 6vw;
   display: none;
   fill: #FFFFFF;
 }
@@ -124,7 +124,7 @@
 
 @media only screen and (max-width: 950px) {
   #changeable_header {
-    height: 75px;
+    height: 8vw;
   }
   .right_section {
     display: none;
@@ -140,10 +140,12 @@
   .hamburger_icon {
     flex: 1;
     display: flex;
-    margin-right: 3vw;
+    margin-right: 5vw;
+    width: 3vw;
   }
   .fajntajm_logo {
-    width: 80px;
+    width: 15vw;
+    margin-left: 9vw;
   }
   .mid_section {
     flex-direction: column;
@@ -164,19 +166,47 @@
     font-size: 5vh;
     margin-top: 10%;
   }
+  .right_section {
+    width: 100vw;
+    justify-content: start;
+  }
   .language a {
     color: rgb(0, 0, 0);
+    font-size: 3vh;
+    margin-right: 3vh;
+  }
+  .language a:hover {
+    font-size: 3.1vh;
+  }
+  .social_sites {
+    margin-left: 20vw;
   }
   .ig_logo_header {
     fill: black;
+    width: 5vw;
   }
   .fb_logo_header {
     fill: black;
   }
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 480px) {
+  #changeable_header {
+    height: 17vw;
+  }
+  .fajntajm_logo {
+    width: 28vw;
+  }
+  .hamburger_icon {
+    width: 6vw;
+  }
   .mid_section li a {
-    font-size: 35px;
+    font-size: 10vw;
+  }
+  .language a {
+    font-size: 5vw;
+  }
+  .social_sites {
+    margin-left: 30vw;
   }
 }
 .logo_color_change {
