@@ -129,7 +129,8 @@
   .right_section {
     display: none;
     position: fixed;
-    margin-left: 20px;
+    margin-left: 30px;
+    padding-bottom: 5vh;
     height: 15%;
     bottom: 0;
   }
@@ -146,13 +147,14 @@
   .fajntajm_logo {
     width: 15vw;
     margin-left: 9vw;
+    margin-top: 1.5vw;
   }
   .mid_section {
     flex-direction: column;
     position: fixed;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 7%;
+    padding-top: 10%;
     top: 0;
     bottom: 0;
     left: 100%;
@@ -165,10 +167,13 @@
     display: flex;
     font-size: 5vh;
     margin-top: 10%;
+    margin: 3vh;
   }
   .right_section {
     width: 100vw;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
   }
   .language a {
     color: rgb(0, 0, 0);
@@ -179,14 +184,14 @@
     font-size: 3.1vh;
   }
   .social_sites {
-    margin-left: 20vw;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
+    margin-left: 0;
   }
-  .ig_logo_header {
-    fill: black;
-    width: 5vw;
-  }
+  .ig_logo_header,
   .fb_logo_header {
     fill: black;
+    width: 2vh;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -200,13 +205,11 @@
     width: 6vw;
   }
   .mid_section li a {
-    font-size: 10vw;
+    font-size: 5vh;
+    margin: 3vh;
   }
   .language a {
     font-size: 5vw;
-  }
-  .social_sites {
-    margin-left: 30vw;
   }
 }
 .logo_color_change {

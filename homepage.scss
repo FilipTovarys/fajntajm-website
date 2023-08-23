@@ -39,7 +39,6 @@
     
     .scroll_text {
         flex: 1;
-        font-family: Hanken Grotesk;
         color: white;
         font-size: 1vw;
         font-weight: 200;
@@ -52,7 +51,6 @@
 
 
 .main_div {
-    font-family: Hanken Grotesk;
     margin: 0;
     background-color: white;
     width: 100%;
@@ -61,7 +59,7 @@
 }
 
 .book {
-    height: 48px;
+    height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +68,6 @@
 }
 
 .book_link {
-    font-family: Hanken Grotesk;
     font-weight: 300;
     font-size: 16px;
     text-decoration: none;
@@ -92,10 +89,12 @@
     justify-content: center;
     align-items: center;
     height: 350px;
+    padding-left: 3vw;
+    padding-right: 3vw;
 
     h1 {
         text-align: center;
-        font-weight: 600;
+        font-weight: 200;
         font-size: 28px;
         margin-bottom: 0;
         padding-bottom: 0;
@@ -103,7 +102,7 @@
 
     p {
         text-align: center;
-        font-weight: 400;
+        font-weight: 200;
         font-size: 28px;
         margin-top: 0;
         padding-top: 0;
@@ -113,18 +112,10 @@
 
 .onlymobile_intro_pic {
     display: none;
-    padding: 2%;
-    margin-bottom: 6%;
 }
 
 .mobile_pic {
     width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-    .onlymobile_intro_pic {
-        display: flex;
-    }
 }
 
 
@@ -138,13 +129,15 @@
 .house_intro_container,
 .room_intro_container {
     display: flex;
-    padding-bottom: 160px;
+    margin-bottom: 12vw;
+    
 
     .house_intro_pic_side,
     .room_intro_pic_side {
         flex: 2;
         display: flex;
         flex-direction: column;
+        row-gap: 3vw;
     }
 }
 
@@ -155,29 +148,6 @@
 .house_homepage_img,
 .rooms_homepage_img {
     width: 100%;
-    margin-bottom: 3%;
-}
-
-@media only screen and (max-width: 600px) {
-    .house_intro_container,
-    .room_intro_container {
-        display: block;
-    }
-
-    .house_intro_pic_side,
-    .room_intro_pic_side {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .house_homepage_img,
-    .rooms_homepage_img {
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-    }
 }
 
 
@@ -193,16 +163,30 @@
 
         h1 {
             margin: 0;
+            font-weight: 200;
         }
 
         p {
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: 200;
             max-width: 430px;
         }
 
         a {
             color: black;
             font-size: 18px;
+            font-weight: 200;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        a:hover {
+            color: white;
+            background-color: black;
+            transition: 0.25s;
         }
     }
 }
@@ -214,6 +198,29 @@
 
 .wellness_intro_container {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vw;
+
+    a {
+        display: none;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        width: 150px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        transition: 0.25s;
+    }
 }
 
 .wellness_intro_text_container {
@@ -221,45 +228,71 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
-    padding-right: 5%;
+    align-items: center;
+    padding: 3vw;
+    padding-top: 0;
     
     h1 {
         color: white;
-        text-align: start;
+        text-align: center;
         margin: 0;
         margin-top: 60px;
-        font-weight: 600;
+        font-weight: 200;
+        font-size: 32px;
     }
 
     p {
         color: white;
         font-weight: 200;
         max-width: 700px;
-        text-align: start;
+        text-align: center;
         margin-bottom: 30px;
-        margin-top: 0px;
-        font-size: 28px;
+        margin-top: 24px;
+        font-size: 24px;
+    }
+
+    a {
+        display: none;
+        color: white;
+        font-size: 18px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        transition: 0.25s;
     }
 }
 
 .wellness_intro_photo_container {
     display: flex;
-    padding: 40px;
+    flex: 1;
+    padding: 10vw;
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 4vw;
     background-color: transparent;
 }
 
 .wellness_intro_img {
     flex: 1;
-    margin: 8px;
+    position: relative;
 
     img {
         width: 100%;
     }
 }
 
+#wellness_absolute {
+    display: block;
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+}
 
 .comments_container {
     background-color: rgb(224, 224, 224);
@@ -272,7 +305,7 @@
 .comments_conatiner_row1 {
     h1 {
         margin: 0;
-        font-weight: 600;
+        font-weight: 200;
     }
 }
 
@@ -282,14 +315,77 @@
 
     p {
         flex: 1;
-        font-size: 2vw;
+        font-size: 18px;
         font-weight: 200;
     }
 
     .comments_names {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .onlymobile_intro_pic {
+        display: flex;
+    }
+
+    .homepage_intro_text_div {
+        height: 250px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .house_intro_text_side,
+    .room_intro_text_side {
+        padding-top: 22vw;
+        padding-bottom: 12vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    #house_intro_text_side_sticky,
+    #room_intro_text_side_sticky {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .house_intro_container,
+    .room_intro_container {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .room_intro_container {
+        margin-bottom: 25vw;
+    }
+
+    #house_intro_pic_side,
+    #room_intro_pic_side {
+        padding-left: 0;
+        padding-right: 0;
+        row-gap: 5vw;
+    }
+
+    .house_homepage_img,
+    .rooms_homepage_img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .wellness_intro_text_container {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 480px) {
     
@@ -311,5 +407,27 @@
         .book_link {
             font-size: 5vw;
         }
+    }
+
+    .wellness_intro_container {
+    padding-bottom: 5vw;
+
+        a {
+            display: block;
+        }
+    }
+
+    .wellness_intro_text_container {
+        p {
+            text-align: start;
+        }
+
+        h1 {
+            text-align: start;
+        }
+    }
+
+    #wellness_absolute {
+        display: none;
     }
 }
