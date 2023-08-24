@@ -366,6 +366,9 @@
   .book .book_link {
     font-size: 5vw;
   }
+  #house_homepage_img {
+    display: none;
+  }
   .wellness_intro_container {
     padding-bottom: 5vw;
   }

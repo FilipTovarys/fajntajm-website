@@ -140,6 +140,7 @@
   }
   .hamburger {
     cursor: pointer;
+    margin-right: 3vw;
   }
   #hamburger_checkbox {
     display: none;
@@ -196,14 +197,8 @@
     background: black;
   }
   input[type=checkbox]:checked ~ .bars .middle_bar {
-    transform: translateX(20px);
+    transform: translateX(25%);
     opacity: 0;
-  }
-  .hamburger_icon {
-    flex: 1;
-    display: flex;
-    margin-right: 5vw;
-    width: 3vw;
   }
   .fajntajm_logo {
     width: 15vw;
@@ -262,15 +257,16 @@
   .fajntajm_logo {
     width: 28vw;
   }
-  .hamburger_icon {
-    width: 6vw;
-  }
   .mid_section li a {
     font-size: 5vh;
     margin: 3vh;
   }
   .language a {
     font-size: 5vw;
+  }
+  .bars {
+    width: 8vw;
+    height: 4vw;
   }
 }
 .logo_color_change {
@@ -294,14 +290,6 @@
 }
 
 .fb_logo_color_change {
-  fill: black;
-}
-
-.hamburger_icon_color_change {
-  fill: black;
-}
-
-.hamburger_icon_color_change_bl {
   fill: black;
 }
 
