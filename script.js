@@ -42,5 +42,3 @@ menu.onclick = () => {
   right_section.classList.toggle("right_section_open");
   hamburger.classList.toggle("hamburger_icon_color_change_bl");
 }
-
-

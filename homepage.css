@@ -298,13 +298,11 @@
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
-.comments_conatiner_row2 p {
+
+#comment {
   flex: 1;
   font-size: 18px;
   font-weight: 200;
-}
-.comments_conatiner_row2 .comments_names {
-  font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -382,5 +380,20 @@
   }
   #wellness_absolute {
     display: none;
+  }
+  #comments_conatiner_row2 {
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -moz-column-gap: 4%;
+         column-gap: 4%;
+  }
+  #comments_conatiner_row2::-webkit-scrollbar {
+    display: none;
+  }
+  #comment {
+    width: 100%;
+    flex: initial;
+    flex-shrink: 0;
+    scroll-snap-align: start;
   }
 }/*# sourceMappingURL=homepage.css.map */
