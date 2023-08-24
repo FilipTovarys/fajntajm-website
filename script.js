@@ -5,12 +5,13 @@ const languages = document.getElementsByClassName("language")[0];
 const logo = document.getElementById("fajntajm_logo");
 const ig = document.getElementById("ig_header");
 const fb = document.getElementById("fb_header");
-const hamburger = document.querySelector(".fill_empty");
+const hamburger = document.querySelector(".fill_empty_bar");
+const bars = document.getElementById("top_bar");
 const navbar = document.querySelector(".mid_section");
 const navbar_path = document.getElementById("bars_white");
 const right_section = document.getElementsByClassName("right_section")[0];
 const body = document.getElementsByTagName("body")[0];
-console.log(hamburger);
+console.log(bars);
 
 
 window.onscroll = function() {
@@ -22,6 +23,8 @@ window.onscroll = function() {
     languages.classList.add("languages_color_change");
     ig.classList.add("ig_logo_color_change");
     fb.classList.add("fb_logo_color_change");
+    bars.classList.add("bars_color_change");
+    console.log("added");
   } else {
     logo.classList.remove("logo_color_change");
     menuItems.classList.remove("menu_color_change");
@@ -29,6 +32,7 @@ window.onscroll = function() {
     languages.classList.remove("languages_color_change");
     ig.classList.remove("ig_logo_color_change");
     fb.classList.remove("fb_logo_color_change");
+    bars.classList.remove("bars_color_change");
   }
 };
 
