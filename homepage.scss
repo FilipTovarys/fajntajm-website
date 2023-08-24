@@ -431,6 +431,8 @@
         overflow: auto;
         scroll-snap-type: x mandatory;
         column-gap: 4%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     #comments_conatiner_row2::-webkit-scrollbar {
@@ -443,5 +445,9 @@
         flex: initial;
         flex-shrink: 0;
         scroll-snap-align: start;
+    }
+
+    #comment:checked {
+        background-color: red;
     }
 }
