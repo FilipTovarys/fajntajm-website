@@ -1,1 +1,1 @@
-My first static web-page
+My first static one-page web.
